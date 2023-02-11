@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;  
+    font-size: 42px;
+  }
+body{
+    max-width: 100vh;
+    overflow: hidden;
+    min-height: 100vh;    
+    perspective: 700px;
+    background: -webkit-linear-gradient(top,#63bbc5,#c5e4d3,#025f53);
+    perspective-origin: 77px 100px ;
+  
+}
+.merge{
+  position: absolute;
+  margin-left: 15%; 
+  margin-top: 5%; 
+  width: 1200px;
+  height:90%;
+  background:rgb(17, 17, 17);
+  border: solid 2px #0d4b58;
+  box-shadow: 0 0 50px 10px  rgb(0, 26, 46) inset,
+          0 0 0 1px aqua inset;
+} 
+
+.cube1{
+  position: relative;
+  transform-style: preserve-3d;  
+  animation-name: cube1;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: .5;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  
+}
+.cube2{
+  position: relative;
+  transform-style: preserve-3d;  
+  animation-name: cube2;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: .5;
+  animation-delay: 8.3s;
+  animation-fill-mode: forwards;  
+  top: 17%;
+  right: -1116px;
+  
+}
+.cube3{
+  position: relative;
+  transform-style: preserve-3d;  
+  animation-name: cube3;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: .5;
+  animation-delay: 16s;
+  animation-fill-mode: forwards;
+  top: 34%;
+}
+.cube4{
+  position: relative;
+  transform-style: preserve-3d;  
+  animation-name: cube4;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: .5;
+  animation-delay: 24s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  top: 51%;
+  right: -1116px;
+}
+.cube5{
+  position: relative;
+  transform-style: preserve-3d;  
+  animation-name: cube5;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: .5;
+  animation-delay: 32s;
+  animation-fill-mode: forwards;
+  top: 68%;
+}
+.cube6{
+  position: relative;
+  transform-style: preserve-3d;  
+  animation-name: cube6;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: .5;
+  animation-delay: 40s; 
+  animation-fill-mode: forwards;
+  top: 85.1%;
+  right: -1116px;
+}
+
+
+.top , .bottom , .left , .right , .front , .back{
+ height: 2em;
+ width: 2em;  
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ box-shadow: 0 0 50px 10px  rgb(145, 72, 145) inset,
+         0 0 0 2em aqua inset ;
+   
+}
+
+ .left1 , .right1  , .back1{
+  height: 2em;
+  width: 2em;  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0 0 50px 10px  rgb(63, 63, 216) inset,
+          0 0 0 2em aqua inset ;
+    
+ }
+
+ 
+
+
+
+.front{
+ transform: translateZ(1em);
+}
+
+.back{
+ transform: translateZ(-1em);
+}
+
+
+.top{
+ transform: translateY(-1em) rotateX(90deg);
+}
+.bottom{
+ transform: translateY(1em) rotateX(90deg);
+}
+.right{
+ transform: translateX(1em) rotateY(90deg);
+}
+.left{
+ transform: translateX(-1em) rotateY(90deg);
+
+}
+@keyframes cube1{
+0%{top:0;   left: 0; transform: rotateY(360deg); }
+50%{background-color: black;}
+100%{right: 0; animation-play-state: paused;}
+
+
+}
+@keyframes cube2{
+  0%{   right: -1116px; transform: rotateY(-360deg);}
+  50%{  right: 1116px;}
+  100%{animation-play-state: paused;}
+  
+  
+ }
+
+@keyframes cube3{
+  from{left: 0; transform: rotateY(360deg);}
+    
+  to{right: 0; animation-play-state: paused;}
+    
+    
+
+ }
+ 
+ @keyframes cube4{
+ 
+  0%{   right: -1116px; transform: rotateY(-360deg);}
+  50%{  right: 1116px;}
+  100%{animation-play-state: paused;}
+  
+  } 
+ @keyframes cube5{
+from{ left: 0; transform: rotateY(360deg);}
+
+to{right: 0; animation-play-state: paused;}
+
+
+} 
+@keyframes cube6{
+  0%{   right: -1116px; transform: rotateY(-360deg);}
+  50%{  right: 1116px;}
+  100%{animation-play-state: paused;}
+    
+  
+  }
+
+
+
+/*div1 start*/
+ /* .div1{   
+    animation-name: div1;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    background: url(../images/Screenshot\ 2023-02-09\ 225905.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-iteration-count: 1;
+    position: absolute;   
+    width:380px;
+    height:150px;      
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+}
+
+ @keyframes div1{
+ 0%{top:0;   left: 0;  }
+ 50%{left:950px;}
+ 100%{right:0; }
+
+} */
+/*div2 start*/
+/* .div2{
+    animation-name: div2;
+    animation-duration: 6s;
+    animation-delay: 6s;
+    animation-iteration-count: 1;
+    position: absolute;
+    right: 0;
+    top: 120px;
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes div2{
+ 0%{right:0;top: 120px; background-color:aqua;}
+ 50%{right:1267px; background-color:blanchedalmond;}
+ 100%{left:0; background-color:aquamarine;}
+
+} */
+/*div3 start*/
+ /* .div3{
+    animation-name: div3;
+    animation-duration: 6s;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+    position: absolute; 
+    top: 220px; 
+    background: url(../images/fox.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: cadetblue;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    width:380px;
+    height:250px; 
+}
+@keyframes div3{
+ 0%{left:0;top: 220px; background-color:aqua;}
+ 50%{left:1267px; background-color:blanchedalmond;}
+ 100%{right:0; background-color:yellowgreen;}
+
+}  */
+/*div4 start*/
+/* .div4{
+    animation-name: div4;
+    animation-duration: 6s;
+    animation-delay: 18s;
+    animation-iteration-count: 1;
+    position: absolute;
+    right: 0;
+    top: 320px;
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes div4{
+ 0%{right:0; background-color:aqua;}
+ 50%{right:1267px; background-color:blanchedalmond;}
+ 100%{left:0; background-color:brown;}
+
+} */
+/*div5 start*/
+/* .div5{
+    animation-name: div5;
+    animation-duration: 6s;
+    animation-delay: 24s;
+    animation-iteration-count: 1;
+    position: absolute; 
+    top: 420px;
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes div5{
+ 0%{left:0; background-color:aqua;}
+ 50%{left:1266px; background-color:blanchedalmond;}
+ 100%{right:0; background-color:blueviolet;}
+
+} */
+/*div6 start*/
+/* .div6{
+    animation-name: div6;
+    animation-duration: 6s;
+    animation-delay: 32s;
+    animation-iteration-count: 1;
+    position: absolute;
+    right: 0;
+    top: 520px;
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes div6{
+ 0%{right:0;background-color:aqua;}
+ 50%{right:1267px; background-color:blanchedalmond;}
+ 100%{left:0; background-color:blue;}
+
+} */ 
